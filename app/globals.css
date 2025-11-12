@@ -1,0 +1,57 @@
+:root {
+  --bg-dark: #0f172a;
+  --bg-light: #1f2937;
+  --bg-card: #111827;
+  --primary: #38bdf8;
+  --primary-hover: #0ea5e9;
+  --accent: #fbbf24;
+  --text-light: #f1f5f9;
+  --text-muted: #94a3b8;
+  --success: #34d399;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(160deg, var(--bg-dark), #020617 45%, #111827 100%);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.8);
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
